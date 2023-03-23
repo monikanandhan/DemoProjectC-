@@ -1,0 +1,16 @@
+C:\Users\monica.a\source\repos\StringDemoApp\bin\Debug\net5.0\StringDemoApp.exe
+C:\Users\monica.a\source\repos\StringDemoApp\bin\Debug\net5.0\StringDemoApp.deps.json
+C:\Users\monica.a\source\repos\StringDemoApp\bin\Debug\net5.0\StringDemoApp.runtimeconfig.json
+C:\Users\monica.a\source\repos\StringDemoApp\bin\Debug\net5.0\StringDemoApp.runtimeconfig.dev.json
+C:\Users\monica.a\source\repos\StringDemoApp\bin\Debug\net5.0\StringDemoApp.dll
+C:\Users\monica.a\source\repos\StringDemoApp\bin\Debug\net5.0\ref\StringDemoApp.dll
+C:\Users\monica.a\source\repos\StringDemoApp\bin\Debug\net5.0\StringDemoApp.pdb
+C:\Users\monica.a\source\repos\StringDemoApp\obj\Debug\net5.0\StringDemoApp.csproj.AssemblyReference.cache
+C:\Users\monica.a\source\repos\StringDemoApp\obj\Debug\net5.0\StringDemoApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monica.a\source\repos\StringDemoApp\obj\Debug\net5.0\StringDemoApp.AssemblyInfoInputs.cache
+C:\Users\monica.a\source\repos\StringDemoApp\obj\Debug\net5.0\StringDemoApp.AssemblyInfo.cs
+C:\Users\monica.a\source\repos\StringDemoApp\obj\Debug\net5.0\StringDemoApp.csproj.CoreCompileInputs.cache
+C:\Users\monica.a\source\repos\StringDemoApp\obj\Debug\net5.0\StringDemoApp.dll
+C:\Users\monica.a\source\repos\StringDemoApp\obj\Debug\net5.0\ref\StringDemoApp.dll
+C:\Users\monica.a\source\repos\StringDemoApp\obj\Debug\net5.0\StringDemoApp.pdb
+C:\Users\monica.a\source\repos\StringDemoApp\obj\Debug\net5.0\StringDemoApp.genruntimeconfig.cache

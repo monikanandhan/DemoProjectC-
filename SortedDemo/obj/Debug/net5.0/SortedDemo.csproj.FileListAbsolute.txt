@@ -1,0 +1,16 @@
+C:\Users\monica.a\source\repos\SortedDemo\bin\Debug\net5.0\SortedDemo.exe
+C:\Users\monica.a\source\repos\SortedDemo\bin\Debug\net5.0\SortedDemo.deps.json
+C:\Users\monica.a\source\repos\SortedDemo\bin\Debug\net5.0\SortedDemo.runtimeconfig.json
+C:\Users\monica.a\source\repos\SortedDemo\bin\Debug\net5.0\SortedDemo.runtimeconfig.dev.json
+C:\Users\monica.a\source\repos\SortedDemo\bin\Debug\net5.0\SortedDemo.dll
+C:\Users\monica.a\source\repos\SortedDemo\bin\Debug\net5.0\ref\SortedDemo.dll
+C:\Users\monica.a\source\repos\SortedDemo\bin\Debug\net5.0\SortedDemo.pdb
+C:\Users\monica.a\source\repos\SortedDemo\obj\Debug\net5.0\SortedDemo.csproj.AssemblyReference.cache
+C:\Users\monica.a\source\repos\SortedDemo\obj\Debug\net5.0\SortedDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monica.a\source\repos\SortedDemo\obj\Debug\net5.0\SortedDemo.AssemblyInfoInputs.cache
+C:\Users\monica.a\source\repos\SortedDemo\obj\Debug\net5.0\SortedDemo.AssemblyInfo.cs
+C:\Users\monica.a\source\repos\SortedDemo\obj\Debug\net5.0\SortedDemo.csproj.CoreCompileInputs.cache
+C:\Users\monica.a\source\repos\SortedDemo\obj\Debug\net5.0\SortedDemo.dll
+C:\Users\monica.a\source\repos\SortedDemo\obj\Debug\net5.0\ref\SortedDemo.dll
+C:\Users\monica.a\source\repos\SortedDemo\obj\Debug\net5.0\SortedDemo.pdb
+C:\Users\monica.a\source\repos\SortedDemo\obj\Debug\net5.0\SortedDemo.genruntimeconfig.cache

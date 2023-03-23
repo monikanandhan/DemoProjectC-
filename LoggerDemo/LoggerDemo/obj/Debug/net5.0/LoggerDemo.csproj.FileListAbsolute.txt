@@ -1,0 +1,16 @@
+C:\Users\monica.a\source\repos\LoggerDemo\LoggerDemo\bin\Debug\net5.0\LoggerDemo.exe
+C:\Users\monica.a\source\repos\LoggerDemo\LoggerDemo\bin\Debug\net5.0\LoggerDemo.deps.json
+C:\Users\monica.a\source\repos\LoggerDemo\LoggerDemo\bin\Debug\net5.0\LoggerDemo.runtimeconfig.json
+C:\Users\monica.a\source\repos\LoggerDemo\LoggerDemo\bin\Debug\net5.0\LoggerDemo.runtimeconfig.dev.json
+C:\Users\monica.a\source\repos\LoggerDemo\LoggerDemo\bin\Debug\net5.0\LoggerDemo.dll
+C:\Users\monica.a\source\repos\LoggerDemo\LoggerDemo\bin\Debug\net5.0\ref\LoggerDemo.dll
+C:\Users\monica.a\source\repos\LoggerDemo\LoggerDemo\bin\Debug\net5.0\LoggerDemo.pdb
+C:\Users\monica.a\source\repos\LoggerDemo\LoggerDemo\obj\Debug\net5.0\LoggerDemo.csproj.AssemblyReference.cache
+C:\Users\monica.a\source\repos\LoggerDemo\LoggerDemo\obj\Debug\net5.0\LoggerDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monica.a\source\repos\LoggerDemo\LoggerDemo\obj\Debug\net5.0\LoggerDemo.AssemblyInfoInputs.cache
+C:\Users\monica.a\source\repos\LoggerDemo\LoggerDemo\obj\Debug\net5.0\LoggerDemo.AssemblyInfo.cs
+C:\Users\monica.a\source\repos\LoggerDemo\LoggerDemo\obj\Debug\net5.0\LoggerDemo.csproj.CoreCompileInputs.cache
+C:\Users\monica.a\source\repos\LoggerDemo\LoggerDemo\obj\Debug\net5.0\LoggerDemo.dll
+C:\Users\monica.a\source\repos\LoggerDemo\LoggerDemo\obj\Debug\net5.0\ref\LoggerDemo.dll
+C:\Users\monica.a\source\repos\LoggerDemo\LoggerDemo\obj\Debug\net5.0\LoggerDemo.pdb
+C:\Users\monica.a\source\repos\LoggerDemo\LoggerDemo\obj\Debug\net5.0\LoggerDemo.genruntimeconfig.cache

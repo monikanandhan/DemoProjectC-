@@ -1,0 +1,16 @@
+C:\Users\monica.a\source\repos\DemoClass\bin\Debug\net5.0\DemoClass.exe
+C:\Users\monica.a\source\repos\DemoClass\bin\Debug\net5.0\DemoClass.deps.json
+C:\Users\monica.a\source\repos\DemoClass\bin\Debug\net5.0\DemoClass.runtimeconfig.json
+C:\Users\monica.a\source\repos\DemoClass\bin\Debug\net5.0\DemoClass.runtimeconfig.dev.json
+C:\Users\monica.a\source\repos\DemoClass\bin\Debug\net5.0\DemoClass.dll
+C:\Users\monica.a\source\repos\DemoClass\bin\Debug\net5.0\ref\DemoClass.dll
+C:\Users\monica.a\source\repos\DemoClass\bin\Debug\net5.0\DemoClass.pdb
+C:\Users\monica.a\source\repos\DemoClass\obj\Debug\net5.0\DemoClass.csproj.AssemblyReference.cache
+C:\Users\monica.a\source\repos\DemoClass\obj\Debug\net5.0\DemoClass.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monica.a\source\repos\DemoClass\obj\Debug\net5.0\DemoClass.AssemblyInfoInputs.cache
+C:\Users\monica.a\source\repos\DemoClass\obj\Debug\net5.0\DemoClass.AssemblyInfo.cs
+C:\Users\monica.a\source\repos\DemoClass\obj\Debug\net5.0\DemoClass.csproj.CoreCompileInputs.cache
+C:\Users\monica.a\source\repos\DemoClass\obj\Debug\net5.0\DemoClass.dll
+C:\Users\monica.a\source\repos\DemoClass\obj\Debug\net5.0\ref\DemoClass.dll
+C:\Users\monica.a\source\repos\DemoClass\obj\Debug\net5.0\DemoClass.pdb
+C:\Users\monica.a\source\repos\DemoClass\obj\Debug\net5.0\DemoClass.genruntimeconfig.cache

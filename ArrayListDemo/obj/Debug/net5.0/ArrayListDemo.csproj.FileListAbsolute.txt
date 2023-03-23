@@ -1,0 +1,16 @@
+C:\Users\monica.a\source\repos\ArrayListDemo\bin\Debug\net5.0\ArrayListDemo.exe
+C:\Users\monica.a\source\repos\ArrayListDemo\bin\Debug\net5.0\ArrayListDemo.deps.json
+C:\Users\monica.a\source\repos\ArrayListDemo\bin\Debug\net5.0\ArrayListDemo.runtimeconfig.json
+C:\Users\monica.a\source\repos\ArrayListDemo\bin\Debug\net5.0\ArrayListDemo.runtimeconfig.dev.json
+C:\Users\monica.a\source\repos\ArrayListDemo\bin\Debug\net5.0\ArrayListDemo.dll
+C:\Users\monica.a\source\repos\ArrayListDemo\bin\Debug\net5.0\ref\ArrayListDemo.dll
+C:\Users\monica.a\source\repos\ArrayListDemo\bin\Debug\net5.0\ArrayListDemo.pdb
+C:\Users\monica.a\source\repos\ArrayListDemo\obj\Debug\net5.0\ArrayListDemo.csproj.AssemblyReference.cache
+C:\Users\monica.a\source\repos\ArrayListDemo\obj\Debug\net5.0\ArrayListDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monica.a\source\repos\ArrayListDemo\obj\Debug\net5.0\ArrayListDemo.AssemblyInfoInputs.cache
+C:\Users\monica.a\source\repos\ArrayListDemo\obj\Debug\net5.0\ArrayListDemo.AssemblyInfo.cs
+C:\Users\monica.a\source\repos\ArrayListDemo\obj\Debug\net5.0\ArrayListDemo.csproj.CoreCompileInputs.cache
+C:\Users\monica.a\source\repos\ArrayListDemo\obj\Debug\net5.0\ArrayListDemo.dll
+C:\Users\monica.a\source\repos\ArrayListDemo\obj\Debug\net5.0\ref\ArrayListDemo.dll
+C:\Users\monica.a\source\repos\ArrayListDemo\obj\Debug\net5.0\ArrayListDemo.pdb
+C:\Users\monica.a\source\repos\ArrayListDemo\obj\Debug\net5.0\ArrayListDemo.genruntimeconfig.cache

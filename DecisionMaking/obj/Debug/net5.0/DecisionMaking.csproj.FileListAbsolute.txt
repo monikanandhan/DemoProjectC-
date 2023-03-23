@@ -1,0 +1,16 @@
+C:\Users\monica.a\source\repos\DecisionMaking\bin\Debug\net5.0\DecisionMaking.exe
+C:\Users\monica.a\source\repos\DecisionMaking\bin\Debug\net5.0\DecisionMaking.deps.json
+C:\Users\monica.a\source\repos\DecisionMaking\bin\Debug\net5.0\DecisionMaking.runtimeconfig.json
+C:\Users\monica.a\source\repos\DecisionMaking\bin\Debug\net5.0\DecisionMaking.runtimeconfig.dev.json
+C:\Users\monica.a\source\repos\DecisionMaking\bin\Debug\net5.0\DecisionMaking.dll
+C:\Users\monica.a\source\repos\DecisionMaking\bin\Debug\net5.0\ref\DecisionMaking.dll
+C:\Users\monica.a\source\repos\DecisionMaking\bin\Debug\net5.0\DecisionMaking.pdb
+C:\Users\monica.a\source\repos\DecisionMaking\obj\Debug\net5.0\DecisionMaking.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monica.a\source\repos\DecisionMaking\obj\Debug\net5.0\DecisionMaking.AssemblyInfoInputs.cache
+C:\Users\monica.a\source\repos\DecisionMaking\obj\Debug\net5.0\DecisionMaking.AssemblyInfo.cs
+C:\Users\monica.a\source\repos\DecisionMaking\obj\Debug\net5.0\DecisionMaking.csproj.CoreCompileInputs.cache
+C:\Users\monica.a\source\repos\DecisionMaking\obj\Debug\net5.0\DecisionMaking.dll
+C:\Users\monica.a\source\repos\DecisionMaking\obj\Debug\net5.0\ref\DecisionMaking.dll
+C:\Users\monica.a\source\repos\DecisionMaking\obj\Debug\net5.0\DecisionMaking.pdb
+C:\Users\monica.a\source\repos\DecisionMaking\obj\Debug\net5.0\DecisionMaking.genruntimeconfig.cache
+C:\Users\monica.a\source\repos\DecisionMaking\obj\Debug\net5.0\DecisionMaking.csproj.AssemblyReference.cache

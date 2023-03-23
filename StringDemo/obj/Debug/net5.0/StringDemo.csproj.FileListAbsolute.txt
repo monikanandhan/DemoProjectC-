@@ -1,0 +1,16 @@
+C:\Users\monica.a\source\repos\StringDemo\bin\Debug\net5.0\StringDemo.exe
+C:\Users\monica.a\source\repos\StringDemo\bin\Debug\net5.0\StringDemo.deps.json
+C:\Users\monica.a\source\repos\StringDemo\bin\Debug\net5.0\StringDemo.runtimeconfig.json
+C:\Users\monica.a\source\repos\StringDemo\bin\Debug\net5.0\StringDemo.runtimeconfig.dev.json
+C:\Users\monica.a\source\repos\StringDemo\bin\Debug\net5.0\StringDemo.dll
+C:\Users\monica.a\source\repos\StringDemo\bin\Debug\net5.0\ref\StringDemo.dll
+C:\Users\monica.a\source\repos\StringDemo\bin\Debug\net5.0\StringDemo.pdb
+C:\Users\monica.a\source\repos\StringDemo\obj\Debug\net5.0\StringDemo.csproj.AssemblyReference.cache
+C:\Users\monica.a\source\repos\StringDemo\obj\Debug\net5.0\StringDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monica.a\source\repos\StringDemo\obj\Debug\net5.0\StringDemo.AssemblyInfoInputs.cache
+C:\Users\monica.a\source\repos\StringDemo\obj\Debug\net5.0\StringDemo.AssemblyInfo.cs
+C:\Users\monica.a\source\repos\StringDemo\obj\Debug\net5.0\StringDemo.csproj.CoreCompileInputs.cache
+C:\Users\monica.a\source\repos\StringDemo\obj\Debug\net5.0\StringDemo.dll
+C:\Users\monica.a\source\repos\StringDemo\obj\Debug\net5.0\ref\StringDemo.dll
+C:\Users\monica.a\source\repos\StringDemo\obj\Debug\net5.0\StringDemo.pdb
+C:\Users\monica.a\source\repos\StringDemo\obj\Debug\net5.0\StringDemo.genruntimeconfig.cache

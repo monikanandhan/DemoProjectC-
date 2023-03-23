@@ -1,0 +1,16 @@
+C:\Users\monica.a\source\repos\GenericTypeDemo\bin\Debug\net5.0\GenericTypeDemo.exe
+C:\Users\monica.a\source\repos\GenericTypeDemo\bin\Debug\net5.0\GenericTypeDemo.deps.json
+C:\Users\monica.a\source\repos\GenericTypeDemo\bin\Debug\net5.0\GenericTypeDemo.runtimeconfig.json
+C:\Users\monica.a\source\repos\GenericTypeDemo\bin\Debug\net5.0\GenericTypeDemo.runtimeconfig.dev.json
+C:\Users\monica.a\source\repos\GenericTypeDemo\bin\Debug\net5.0\GenericTypeDemo.dll
+C:\Users\monica.a\source\repos\GenericTypeDemo\bin\Debug\net5.0\ref\GenericTypeDemo.dll
+C:\Users\monica.a\source\repos\GenericTypeDemo\bin\Debug\net5.0\GenericTypeDemo.pdb
+C:\Users\monica.a\source\repos\GenericTypeDemo\obj\Debug\net5.0\GenericTypeDemo.csproj.AssemblyReference.cache
+C:\Users\monica.a\source\repos\GenericTypeDemo\obj\Debug\net5.0\GenericTypeDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monica.a\source\repos\GenericTypeDemo\obj\Debug\net5.0\GenericTypeDemo.AssemblyInfoInputs.cache
+C:\Users\monica.a\source\repos\GenericTypeDemo\obj\Debug\net5.0\GenericTypeDemo.AssemblyInfo.cs
+C:\Users\monica.a\source\repos\GenericTypeDemo\obj\Debug\net5.0\GenericTypeDemo.csproj.CoreCompileInputs.cache
+C:\Users\monica.a\source\repos\GenericTypeDemo\obj\Debug\net5.0\GenericTypeDemo.dll
+C:\Users\monica.a\source\repos\GenericTypeDemo\obj\Debug\net5.0\ref\GenericTypeDemo.dll
+C:\Users\monica.a\source\repos\GenericTypeDemo\obj\Debug\net5.0\GenericTypeDemo.pdb
+C:\Users\monica.a\source\repos\GenericTypeDemo\obj\Debug\net5.0\GenericTypeDemo.genruntimeconfig.cache
