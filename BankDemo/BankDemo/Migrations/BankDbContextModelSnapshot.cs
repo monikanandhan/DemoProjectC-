@@ -152,6 +152,9 @@ namespace BankDemo.Migrations
                     b.Property<float>("Amount")
                         .HasColumnType("float");
 
+                    b.Property<int?>("Customerid")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("LoanProvided")
                         .HasColumnType("datetime(6)");
 
@@ -160,6 +163,8 @@ namespace BankDemo.Migrations
                         .HasColumnType("longtext");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("Customerid");
 
                     b.ToTable("loanDetails");
                 });
@@ -202,8 +207,17 @@ namespace BankDemo.Migrations
                     b.Navigation("loans");
                 });
 
+            modelBuilder.Entity("BankDemo.Model.LoanDetails", b =>
+                {
+                    b.HasOne("BankDemo.Model.Customer", null)
+                        .WithMany("LoanDetails")
+                        .HasForeignKey("Customerid");
+                });
+
             modelBuilder.Entity("BankDemo.Model.Customer", b =>
                 {
+                    b.Navigation("LoanDetails");
+
                     b.Navigation("customer_Loans");
                 });
 

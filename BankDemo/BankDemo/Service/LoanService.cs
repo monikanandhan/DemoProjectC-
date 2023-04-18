@@ -26,6 +26,44 @@ namespace BankDemo.Service
         }
 
         public List<Loan> GetLoanDetails()=>Context.loans.ToList();
+
+        public Loan GetLoanById(int id)
+        {
+            var LoanDetails = Context.loans.Where(n => n.Id == id).Select(n => new Loan()
+            {
+                Id = n.Id,
+                Name=n.Name,
+                Description=n.Description,
+                InterestRate = n.InterestRate,  
+                LoanTenure = n.LoanTenure
+            }).ToList().FirstOrDefault();
+            return LoanDetails;
+        }
        
+        public Loan UpdateById(int id, LoanVM Loan)
+        {
+            var loanid=Context.loans.FirstOrDefault(n => n.Id == id);
+            if(loanid!=null)
+            {
+                    loanid.Name=Loan.Name; 
+                    loanid.Description=Loan.Description;
+                    loanid.InterestRate=Loan.InterestRate;
+                    loanid.LoanTenure=Loan.LoanTenure;
+                Context.SaveChanges();
+            }
+            return loanid;
+            
+        }
+
+        public void DeleteByID(int id)
+        {
+            var loanid = Context.loans.FirstOrDefault(n => n.Id == id);
+            if (loanid != null)
+            {
+                Context.loans.Remove(loanid);  
+                Context.SaveChanges();
+            }
+           
+        }
     }
 }

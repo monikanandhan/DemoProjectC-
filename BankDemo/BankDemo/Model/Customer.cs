@@ -17,8 +17,8 @@
         public string ZipCode { get; set; }
         public string Country { get; set; }
 
-       
-       
+        public List<LoanDetails> LoanDetails { get; set; }
+
         public List<Customer_Loan> customer_Loans { get; set; }
 
 

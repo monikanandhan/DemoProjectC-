@@ -37,6 +37,36 @@ namespace MyBooksDemo.Service
             Context.SaveChanges();
         }
 
+        public void DeleteByID(int id)
+        {
+            var nid = Context.book.FirstOrDefault(n => n.Id == id);
+            if (nid != null)
+            {
+                Context.book.Remove(nid);   
+                Context.SaveChanges();
+            }
+        }
+
+        public List<Book> GetAllBook()=> Context.book.ToList();
+
+        public Book GetBookByID(int id)
+        {
+            var nid = Context.book.Where(n => n.Id == id).Select(s => new Book()
+            {
+                Id = s.Id,
+                Title = s.Title,
+                Description = s.Description,
+                 IsRead = s.IsRead,
+                 DateAdded = s.DateAdded,
+                 Rate = s.Rate,
+                 Genere = s.Genere, 
+                 CoverUrl= s.CoverUrl,
+                 DateRead= s.DateRead
+            }).FirstOrDefault();
+           Context.SaveChanges() ;
+            return nid;
+        }
+
         public void UpdateAllBooks(int id,Book book)
         {
             var nid=Context.book.FirstOrDefault(n=>n.Id==id);
@@ -52,13 +82,9 @@ namespace MyBooksDemo.Service
                 nid.CoverUrl = book.CoverUrl;
                 nid.DateAdded = DateTime.Now;
 
-
-                     Context.SaveChanges();
-
-
             }
 
-           
+            Context.SaveChanges();
 
         }
     }

@@ -27,8 +27,31 @@ namespace BankDemo.Controllers
         [HttpGet]
         public IActionResult GetAllCustomer() 
         {
+
         var CustomerAll=CustomerService.GetAllCustomerDeatils();
             return Ok(CustomerAll);
         }
+
+        [HttpGet("{id}")]
+        public IActionResult GetCustomer(int id) 
+        { 
+        var getID=CustomerService.GetCustomerById(id);
+            return Ok(getID);
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult UpdateByID(int id,CustomerVM customer) 
+        {
+            CustomerService.UpdateCustomerById(id,customer);
+            return Ok();
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult DeleteCustomerByID(int id)
+        {
+            CustomerService.DeleteByID(id);
+            return Ok();
+        }
+
     }
 }

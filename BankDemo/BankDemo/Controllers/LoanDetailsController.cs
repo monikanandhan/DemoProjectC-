@@ -22,11 +22,34 @@ namespace BankDemo.Controllers
             loanDetailsService.AddLoanDetails(loanDetails);
             return Ok(loanDetails);
         }
+
+
         [HttpGet]
-        public IActionResult GetLoanDetails() 
-        { 
-            var result=loanDetailsService.GetAllLoanDetails();
+        public IActionResult GetLoanDetails()
+        {
+            var result = loanDetailsService.GetLoanDetailsList();   
             return Ok(result);
+        }
+
+        [HttpPut("{id}")]
+         public IActionResult UpdateByID(int id, LoanDetailsVM loanDetails)
+        {
+            var result = loanDetailsService.UpdateLoanDetailsList(id,loanDetails);
+            return Ok(result);
+        }
+
+        [HttpGet("{id}")]
+        public IActionResult GetByID(int id)
+        {
+            var result = loanDetailsService.GetLoanDetailsByID(id);
+            return Ok(result);
+        }
+            
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id) 
+        { 
+            loanDetailsService.DeleteById(id);  
+            return Ok();
         }
     }
 }

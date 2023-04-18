@@ -10,8 +10,9 @@ namespace BankDemo.Model
         
         public DateTime LoanProvided { get;set; }
         public string paymentMode { get; set; }
-        public List<Customer_Loan> customer_Loans { get; set; }
+
+
         public List<Loan_details> loandetailsDemo { get; set; }
-       
+        public List<Customer_Loan> customer_Loans { get; set; }
     }
 }

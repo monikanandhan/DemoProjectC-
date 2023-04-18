@@ -30,5 +30,26 @@ namespace BankDemo.Controllers
             loanService.GetLoanDetails();
             return Ok();
         }
+
+        [HttpGet("{id}")]
+        public IActionResult GetLoanBYID(int id)
+        {
+            var result=loanService.GetLoanById(id);    
+            return Ok(result);
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult PutLoanDetails(int id,LoanVM loan) 
+        {
+            loanService.UpdateById(id,loan);
+            return Ok();
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult DeleteLoan(int id) 
+        { 
+            loanService.DeleteByID(id);
+            return Ok();    
+        }
     }
 }

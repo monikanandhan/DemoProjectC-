@@ -11,7 +11,7 @@
        public string Genere { get; set; }
         
         public string CoverUrl { get; set; }
-        public DateTime DateAdded { get; set; }
+        public DateTime DateAdded { get; set; } 
             
         
                     

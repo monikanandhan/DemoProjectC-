@@ -15,6 +15,14 @@ namespace MyBooksDemo.Controllers
           bookService = booksService;
         }
 
+        [HttpPost]
+        public IActionResult CreateNewBook(Book book)
+        {
+
+            bookService.CreateNewBook(book);
+            return Ok();
+        }
+
         [HttpGet]
         public IActionResult GetBooks()
         { 
@@ -22,20 +30,30 @@ namespace MyBooksDemo.Controllers
             return Ok(result);
         }
 
-        [HttpPost]
-        public IActionResult CreateNewBook(Book book)
+        [HttpGet("{id}")]
+        public IActionResult GetBookBYId(int id)
         {
-
-            bookService.CreateNewBook(book);
-            return Ok();    
+            bookService.GetBookByID(id);
+            return Ok();
         }
+
+       
 
         [HttpPut("{id}")]
         public IActionResult EditBook(int id,Book book) 
         {
             bookService.UpdateAllBooks(id,book);
             return Ok();
-                }
+         }
+
+        [HttpDelete("{id}")]
+
+        public IActionResult DeleteBook(int id) 
+        { 
+            bookService.DeleteByID(id); 
+            return Ok();    
+        }
+        
 
     }
 }

@@ -1,8 +1,10 @@
-﻿namespace BankDemo.Model
+﻿using BankDemo.Model.ViewModel;
+
+namespace BankDemo.Model
 {
     public class Customer_Loan
     {
-        public int Id { get; set; }
+        public int Id { get; set; } 
         public int CustomerId { get; set; }
         public Customer customer { get; set; }
        
