@@ -1,6 +1,0 @@
-2023-03-30 15:44:18,239 [11] INFO  App  
- Attempted to divide by zero. 
- 
-2023-03-30 15:54:22,415 [5] INFO  App  
- Attempted to divide by zero. 
- 

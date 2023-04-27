@@ -1,0 +1,6 @@
+C:\Users\monica.a\source\repos\CalculationDemo\XUnitTestDemo\bin\Debug\net6.0\CoverletSourceRootsMapping
+C:\Users\monica.a\source\repos\CalculationDemo\XUnitTestDemo\obj\Debug\net6.0\XUnitTestDemo.csproj.AssemblyReference.cache
+C:\Users\monica.a\source\repos\CalculationDemo\XUnitTestDemo\obj\Debug\net6.0\XUnitTestDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monica.a\source\repos\CalculationDemo\XUnitTestDemo\obj\Debug\net6.0\XUnitTestDemo.AssemblyInfoInputs.cache
+C:\Users\monica.a\source\repos\CalculationDemo\XUnitTestDemo\obj\Debug\net6.0\XUnitTestDemo.AssemblyInfo.cs
+C:\Users\monica.a\source\repos\CalculationDemo\XUnitTestDemo\obj\Debug\net6.0\XUnitTestDemo.csproj.CoreCompileInputs.cache

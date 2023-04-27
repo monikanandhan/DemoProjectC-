@@ -1,0 +1,5 @@
+C:\Users\monica.a\source\repos\CalculationDemo\CalculationDemo\obj\Debug\net6.0\CalculationDemo.csproj.AssemblyReference.cache
+C:\Users\monica.a\source\repos\CalculationDemo\CalculationDemo\obj\Debug\net6.0\CalculationDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monica.a\source\repos\CalculationDemo\CalculationDemo\obj\Debug\net6.0\CalculationDemo.AssemblyInfoInputs.cache
+C:\Users\monica.a\source\repos\CalculationDemo\CalculationDemo\obj\Debug\net6.0\CalculationDemo.AssemblyInfo.cs
+C:\Users\monica.a\source\repos\CalculationDemo\CalculationDemo\obj\Debug\net6.0\CalculationDemo.csproj.CoreCompileInputs.cache

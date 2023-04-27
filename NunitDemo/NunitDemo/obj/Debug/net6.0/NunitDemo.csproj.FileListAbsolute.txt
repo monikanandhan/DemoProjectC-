@@ -1,0 +1,15 @@
+C:\Users\monica.a\source\repos\NunitDemo\NunitDemo\bin\Debug\net6.0\NunitDemo.exe
+C:\Users\monica.a\source\repos\NunitDemo\NunitDemo\bin\Debug\net6.0\NunitDemo.deps.json
+C:\Users\monica.a\source\repos\NunitDemo\NunitDemo\bin\Debug\net6.0\NunitDemo.runtimeconfig.json
+C:\Users\monica.a\source\repos\NunitDemo\NunitDemo\bin\Debug\net6.0\NunitDemo.dll
+C:\Users\monica.a\source\repos\NunitDemo\NunitDemo\bin\Debug\net6.0\NunitDemo.pdb
+C:\Users\monica.a\source\repos\NunitDemo\NunitDemo\obj\Debug\net6.0\NunitDemo.csproj.AssemblyReference.cache
+C:\Users\monica.a\source\repos\NunitDemo\NunitDemo\obj\Debug\net6.0\NunitDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monica.a\source\repos\NunitDemo\NunitDemo\obj\Debug\net6.0\NunitDemo.AssemblyInfoInputs.cache
+C:\Users\monica.a\source\repos\NunitDemo\NunitDemo\obj\Debug\net6.0\NunitDemo.AssemblyInfo.cs
+C:\Users\monica.a\source\repos\NunitDemo\NunitDemo\obj\Debug\net6.0\NunitDemo.csproj.CoreCompileInputs.cache
+C:\Users\monica.a\source\repos\NunitDemo\NunitDemo\obj\Debug\net6.0\NunitDemo.dll
+C:\Users\monica.a\source\repos\NunitDemo\NunitDemo\obj\Debug\net6.0\refint\NunitDemo.dll
+C:\Users\monica.a\source\repos\NunitDemo\NunitDemo\obj\Debug\net6.0\NunitDemo.pdb
+C:\Users\monica.a\source\repos\NunitDemo\NunitDemo\obj\Debug\net6.0\NunitDemo.genruntimeconfig.cache
+C:\Users\monica.a\source\repos\NunitDemo\NunitDemo\obj\Debug\net6.0\ref\NunitDemo.dll

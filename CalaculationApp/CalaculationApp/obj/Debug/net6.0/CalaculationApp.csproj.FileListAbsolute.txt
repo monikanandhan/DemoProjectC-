@@ -1,0 +1,15 @@
+C:\Users\monica.a\source\repos\CalaculationApp\CalaculationApp\obj\Debug\net6.0\CalaculationApp.csproj.AssemblyReference.cache
+C:\Users\monica.a\source\repos\CalaculationApp\CalaculationApp\obj\Debug\net6.0\CalaculationApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monica.a\source\repos\CalaculationApp\CalaculationApp\obj\Debug\net6.0\CalaculationApp.AssemblyInfoInputs.cache
+C:\Users\monica.a\source\repos\CalaculationApp\CalaculationApp\obj\Debug\net6.0\CalaculationApp.AssemblyInfo.cs
+C:\Users\monica.a\source\repos\CalaculationApp\CalaculationApp\obj\Debug\net6.0\CalaculationApp.csproj.CoreCompileInputs.cache
+C:\Users\monica.a\source\repos\CalaculationApp\CalaculationApp\bin\Debug\net6.0\CalaculationApp.exe
+C:\Users\monica.a\source\repos\CalaculationApp\CalaculationApp\bin\Debug\net6.0\CalaculationApp.deps.json
+C:\Users\monica.a\source\repos\CalaculationApp\CalaculationApp\bin\Debug\net6.0\CalaculationApp.runtimeconfig.json
+C:\Users\monica.a\source\repos\CalaculationApp\CalaculationApp\bin\Debug\net6.0\CalaculationApp.dll
+C:\Users\monica.a\source\repos\CalaculationApp\CalaculationApp\bin\Debug\net6.0\CalaculationApp.pdb
+C:\Users\monica.a\source\repos\CalaculationApp\CalaculationApp\obj\Debug\net6.0\CalaculationApp.dll
+C:\Users\monica.a\source\repos\CalaculationApp\CalaculationApp\obj\Debug\net6.0\refint\CalaculationApp.dll
+C:\Users\monica.a\source\repos\CalaculationApp\CalaculationApp\obj\Debug\net6.0\CalaculationApp.pdb
+C:\Users\monica.a\source\repos\CalaculationApp\CalaculationApp\obj\Debug\net6.0\CalaculationApp.genruntimeconfig.cache
+C:\Users\monica.a\source\repos\CalaculationApp\CalaculationApp\obj\Debug\net6.0\ref\CalaculationApp.dll
