@@ -53,14 +53,3 @@ namespace FileReadingWebapi.service
         }
     }
 
-//city = users.ToList().First().city,
-//city_ascii = users.ToList().First().city_ascii,
-//lat = users.ToList().First().lat,
-//lng = users.ToList().First().lng,
-//country = users.ToList().First().country,
-//iso2 = users.ToList().First().iso2,
-//iso3 = users.ToList().First().iso3,
-//admin_name = users.ToList().First().admin_name,
-//capital = users.ToList().First().capital,
-//population = users.ToList().First().population,
-//citiesno = users.ToList().First().citiesno
