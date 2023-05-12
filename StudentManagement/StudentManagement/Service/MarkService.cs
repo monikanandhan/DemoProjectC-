@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Binders;
 using Microsoft.EntityFrameworkCore.Metadata.Conventions;
+using Mysqlx.Session;
 using MySqlX.XDevAPI.Common;
 using StudentManagement.Model;
 using StudentManagement.ViewModel;
@@ -38,7 +39,9 @@ namespace StudentManagement.Service
 
         public List<Mark_Details> GetMark() => Context.Marks.ToList();
 
-        public Dictionary<string, Dictionary<string, int>> GetTermWiseStudentMark(int academicyear)
+
+        /***Get Term Wise student total percentage***/
+        public Dictionary<string, Dictionary<string, int>> GetTermWiseStudentMark(int? academicyear)
         {
 
             var result = Context.Marks.Where(m => m.Student.Academic_Year == academicyear).Select(x => new
@@ -49,7 +52,7 @@ namespace StudentManagement.Service
 
             }).Where(p => p.Percentage > 80).ToList();
 
-            //using Dictionary
+            //using Dictionary//
             Dictionary<string, Dictionary<string, int>> Marks = new Dictionary<string, Dictionary<string, int>>();
 
             foreach (var mark in result)
@@ -73,7 +76,7 @@ namespace StudentManagement.Service
                
             }
 
-            //Using Separate Class
+            //Using Separate Class//
 
             //List<StudentMarksPojo> studentList = new List<StudentMarksPojo>();
 
@@ -103,7 +106,8 @@ namespace StudentManagement.Service
 
         }
 
-        public Dictionary<string, Dictionary<string, double>> GetoverallTermPercentage(int academicyear)
+        /***Get student Total Term percentage***/
+        public Dictionary<string, double> GetoverallTermPercentage(int academicyear)
         {
            
             var result = Context.Marks.Where(s=>s.Student.Academic_Year==academicyear).Select(x => new
@@ -112,59 +116,87 @@ namespace StudentManagement.Service
                 Percentage = (x.English + x.Tamil + x.Maths + x.physics + x.Chemistry + x.ComputerScience) / 6,
 
             });
+            //To get percentage sum//
+            //Dictionary<string, Dictionary<string, double>> TotalPercentage = new Dictionary<string, Dictionary<string, double>>();
 
-            Dictionary<string, Dictionary<string, double>> TotalPercentage = new Dictionary<string, Dictionary<string, double>>();
+            //foreach (var Students in result)
+            //{                
+            //    var demo = TotalPercentage.Where(x => x.Key == Students.StudentName).FirstOrDefault();
 
-            foreach (var Students in result)
-            {                
-                var demo = TotalPercentage.Where(x => x.Key == Students.StudentName).FirstOrDefault();
+            //    if (demo.Value == null)
+            //    {
+            //        TotalPercentage.Add(Students.StudentName, new Dictionary<string, double>()
+            //    {
+            //        {"overallTotalPercentage", Students.Percentage},
+            //    });
+            //    }
+            //    else
+            //    {
+            //        var overallpercentage=0.0;                   
+            //        var overallpercentageresult=demo.Value.TryGetValue("overallTotalPercentage", out overallpercentage);
+            //        overallpercentage = overallpercentage + Students.Percentage;
+            //        demo.Value.Remove("overallTotalPercentage");
+            //        demo.Value.Add("overallTotalPercentage", overallpercentage);
 
-                if (demo.Value == null)
+            //    }
+            //}
+            ////to get overall percentage >75//
+            //Dictionary<string, Dictionary<string, double>> FinaloverallTermPercentage = new Dictionary<string, Dictionary<string, double>>();
+            //foreach (KeyValuePair<string, Dictionary<string, double>>  res in TotalPercentage)
+            //{
+
+            //    var overallTermpercentage = 0.0;             
+            //    var overallTermpercantageresult = res.Value.TryGetValue("overallTotalPercentage", out  overallTermpercentage);
+            //    overallTermpercentage = Math.Round(overallTermpercentage/6,2);
+
+            //    /*********To print Total percentage****/
+
+            //    //res.Value.Remove("overallTotalPercentage");
+            //    //res.Value.Add("overallTotalPercentage", overallTermpercentage);
+
+
+            //    /*********To print Total percentage > 75****/
+            //    if (overallTermpercentage > 75)
+            //    {
+            //        FinaloverallTermPercentage.Add(res.Key, new Dictionary<string, double>()
+            //        {
+            //            {"overallTermpercentage",  overallTermpercentage}
+
+            //     });
+            //    }
+
+            //}
+
+
+            //Without using if-else condition
+            Dictionary<string, double> TotalMarks = new Dictionary<string, double>();
+
+            foreach (var item in result)
+            {
+                var overall = 0.0;
+                TotalMarks.TryGetValue(item.StudentName, out overall);
+                TotalMarks.Remove(item.StudentName);
+                TotalMarks.Add(item.StudentName, overall = overall + item.Percentage);
+            }
+            Dictionary<string, double> TotalTermMarkspercentage = new Dictionary<string, double>();
+            foreach (KeyValuePair<string, double> results in TotalMarks)
+            {
+                var overall = 0.0;
+                TotalMarks.TryGetValue(results.Key, out overall);
+                TotalTermMarkspercentage.Remove(results.Key);
+                var TotalTermpercentage = Math.Round(overall / 6, 2);
+                if (TotalTermpercentage >= 70)
                 {
-                    TotalPercentage.Add(Students.StudentName, new Dictionary<string, double>()
-                {
-                    {"overallTotalPercentage", Students.Percentage},
-                });
-                }
-                else
-                {
-                    var overallpercentage=0.0;                   
-                    var overallpercentageresult=demo.Value.TryGetValue("overallTotalPercentage", out overallpercentage);
-                    overallpercentage = overallpercentage + Students.Percentage;
-                    demo.Value.Remove("overallTotalPercentage");
-                    demo.Value.Add("overallTotalPercentage", overallpercentage);
-                   
+                    TotalTermMarkspercentage.Add(results.Key, TotalTermpercentage);
                 }
             }
-            Dictionary<string, Dictionary<string, double>> FinaloverallTermPercentage = new Dictionary<string, Dictionary<string, double>>();
-            foreach (KeyValuePair<string, Dictionary<string, double>>  res in TotalPercentage)
-            {
-               
-                var overallTermpercentage = 0.0;             
-                var overallTermpercantageresult = res.Value.TryGetValue("overallTotalPercentage", out  overallTermpercentage);
-                overallTermpercentage = overallTermpercentage / 6;
-
-                /*********To print Total percentage****/
-
-                //res.Value.Remove("overallTotalPercentage");
-                //res.Value.Add("overallTotalPercentage", overallTermpercentage);
-
-
-                /*********To print Total percentage > 75****/
-                if (overallTermpercentage > 75)
-                {
-                    FinaloverallTermPercentage.Add(res.Key, new Dictionary<string, double>()
-                    {
-                        {"overallTermpercentage",  overallTermpercentage}
-
-                 });
-                }
-
-            }          
-            return FinaloverallTermPercentage;
+            return TotalTermMarkspercentage;
         }
 
-       public Dictionary<string, Dictionary<string, int>> GetSubjectWiseTotal(int AcademicYear,string subject)
+
+
+        /***Get Subject wise Term total percentage***/
+        public Dictionary<string, Dictionary<string, int>> GetSubjectWiseTotal(int AcademicYear,string subject)
         {
             var MarksGreaterthanEighty = Context.Marks.Where(m => m.Student.Academic_Year == AcademicYear).Select(m => new
             {
@@ -172,13 +204,15 @@ namespace StudentManagement.Service
                 TermName = m.Term.TermName,
                 marks = subject.Equals("physics") ? m.physics : subject.Equals("chemistry") ? m.Chemistry : subject.Equals("English") ?
                 m.English : subject.Equals("Tamil") ? m.Tamil : subject.Equals("ComputerScience") ? m.ComputerScience : m.Maths
-            }).Where(p=>p.marks>=80).ToList();
+            }).Where(p=>p.marks>=80 ).ToList();
 
-            Dictionary<string, Dictionary<string, int>> TotalMarks= new Dictionary<string, Dictionary<string, int>>();
+
+
+            Dictionary<string, Dictionary<string, int>> TotalMarks = new Dictionary<string, Dictionary<string, int>>();
             foreach (var item in MarksGreaterthanEighty)
             {
-              var StudentNameResult= TotalMarks.Where(x => x.Key == item.StudentName).FirstOrDefault();
-                if(StudentNameResult.Value==null)
+                var StudentNameResult = TotalMarks.Where(x => x.Key == item.StudentName).FirstOrDefault();
+                if (StudentNameResult.Value == null)
                 {
                     TotalMarks.Add(item.StudentName, new Dictionary<string, int>()
                     {
@@ -187,15 +221,16 @@ namespace StudentManagement.Service
                 }
                 else
                 {
-                    StudentNameResult.Value.Add(item.TermName,item.marks);
+                    StudentNameResult.Value.Add(item.TermName, item.marks);
                 }
 
             }
 
             return TotalMarks;
         }
-          
-        public Dictionary<string, Dictionary<string, double>> GetStudentSubjectWiseTotal(int academicYear, string subject)
+
+        /***Get Student wise subject total percentage***/
+        public Dictionary<string, double> GetStudentSubjectWiseTotal(int academicYear, string subject)
         {
             var StudentWithMarks = Context.Marks.Where(m => m.Student.Academic_Year == academicYear).Select(m => new
             {
@@ -204,47 +239,73 @@ namespace StudentManagement.Service
                 m.English : subject.Equals("Tamil") ? m.Tamil : subject.Equals("ComputerScience") ? m.ComputerScience : m.Maths
             }).ToList();
 
-            Dictionary<string, Dictionary<string, double>> TotalSubjectMarks = new Dictionary<string, Dictionary<string, double>>();
-            foreach (var item in StudentWithMarks)
-            {
-                var SubjectMark=TotalSubjectMarks.Where(x=>x.Key==item.StudentName).FirstOrDefault(); 
-                if(SubjectMark.Value==null) 
-                {
-                    TotalSubjectMarks.Add(item.StudentName, new Dictionary<string, double>()
-                    {
+            //studentwise subject sum//
 
-                        {"TotalMarks",item.marks}
+            //Dictionary<string, Dictionary<string, double>> TotalSubjectMarks = new Dictionary<string, Dictionary<string, double>>();
+            //foreach (var item in StudentWithMarks)
+            //{
+            //    var SubjectMark=TotalSubjectMarks.Where(x=>x.Key==item.StudentName).FirstOrDefault(); 
+            //    if(SubjectMark.Value==null) 
+            //    {
+            //        TotalSubjectMarks.Add(item.StudentName, new Dictionary<string, double>()
+            //        {
 
-                    });
-                }
-                else
-                {
-                    var TotalSubjectWiseMark = 0.0;
-                    SubjectMark.Value.TryGetValue("TotalMarks", out TotalSubjectWiseMark);
-                    TotalSubjectWiseMark = TotalSubjectWiseMark + item.marks;
-                    SubjectMark.Value.Remove("TotalMarks");
-                    SubjectMark.Value.Add("TotalMarks", TotalSubjectWiseMark);
-                }
+            //            {"TotalMarks",item.marks}
 
-            }
-            Dictionary<string, Dictionary<string, double>> TotalStudentSubjectMarks = new Dictionary<string, Dictionary<string, double>>();
-            foreach (KeyValuePair<string, Dictionary<string, double>> res in TotalSubjectMarks)
-            {
-                var overallSubjectpercentage = 0.0;             
-                var overallTermpercantageresult = res.Value.TryGetValue("TotalMarks", out overallSubjectpercentage);
-                overallSubjectpercentage = Math.Round(overallSubjectpercentage/6,2);
+            //        });
+            //    }
+            //    else
+            //    {
+            //        var TotalSubjectWiseMark = 0.0;
+            //        SubjectMark.Value.TryGetValue("TotalMarks", out TotalSubjectWiseMark);
+            //        TotalSubjectWiseMark = TotalSubjectWiseMark + item.marks;
+            //        SubjectMark.Value.Remove("TotalMarks");
+            //        SubjectMark.Value.Add("TotalMarks", TotalSubjectWiseMark);
+            //    }
+
+            //}
+            ////studentwise subject percentage >=75//
+            //Dictionary<string, Dictionary<string, double>> TotalStudentSubjectMarks = new Dictionary<string, Dictionary<string, double>>();
+            //foreach (KeyValuePair<string, Dictionary<string, double>> res in TotalSubjectMarks)
+            //{
+            //    var overallSubjectpercentage = 0.0;             
+            //    var overallTermpercantageresult = res.Value.TryGetValue("TotalMarks", out overallSubjectpercentage);
+            //    overallSubjectpercentage = Math.Round(overallSubjectpercentage/6,2);
 
                
-                if (overallSubjectpercentage >= 75)
-                {
-                    TotalStudentSubjectMarks.Add(res.Key, new Dictionary<string, double>()
-                    {
-                        {"TotalMarks", overallSubjectpercentage}
+            //    if (overallSubjectpercentage >= 75)
+            //    {
+            //        TotalStudentSubjectMarks.Add(res.Key, new Dictionary<string, double>()
+            //        {
+            //            {"TotalMarks", overallSubjectpercentage}
 
-                 });
-                }
+            //     });
+            //    }
+            //}
+
+            //WIthout using if-else condition
+            Dictionary<string, double> TotalMarks = new Dictionary<string, double>();
+            
+            foreach (var item in StudentWithMarks)
+            {
+                var overall = 0.0;
+                TotalMarks.TryGetValue(item.StudentName, out overall);
+                TotalMarks.Remove(item.StudentName);
+                TotalMarks.Add(item.StudentName, overall=overall+item.marks);
             }
-            return TotalStudentSubjectMarks;
+            Dictionary<string, double> TotalMarksDemo = new Dictionary<string, double>();
+            foreach (KeyValuePair<string, double> result in TotalMarks)
+            {
+                var overall = 0.0;
+                TotalMarks.TryGetValue(result.Key, out overall);
+                TotalMarksDemo.Remove(result.Key);
+                var TotalSubjectpercentage = Math.Round(overall / 6, 2);
+                if(TotalSubjectpercentage>=75)
+                {
+                    TotalMarksDemo.Add(result.Key, TotalSubjectpercentage);
+                }                               
+            }      
+            return TotalMarksDemo;
         }
 
 

@@ -19,41 +19,94 @@ namespace StudentManagement.Controllers
         [HttpPost]
         public IActionResult AddNewMark(MarkVM Mark)
         {
-            var NewMark = service.AddMarkDetails(Mark);  
-            return Ok(NewMark);
-        }
+            try {
+                var NewMark = service.AddMarkDetails(Mark);
+                return Ok(NewMark);
+            }
+            catch(Exception ex) 
+            { 
+                return BadRequest(ex.Message);
+            }
+            }
+
 
 
 
         [HttpGet("Get-Term-Wise-percentage")]
-        public IActionResult GetTermWiseMark(int academic_year)
+        public IActionResult GetTermWiseMark(int? academic_year)
         {
-            var result = service.GetTermWiseStudentMark(academic_year);
-            return Ok(JsonConvert.SerializeObject(result));
+            try
+            {
+                var result = service.GetTermWiseStudentMark(academic_year);
 
+                return Ok(JsonConvert.SerializeObject(result));
+            }
+            catch(Exception ex)
+                {
+                    return NotFound(ex.Message);    
+                }
+           
         }
 
         [HttpGet("Get-overall-Term-Percentage")]
         public IActionResult GetoverallTermPercentage(int academic_year)
         {
-            var result = service.GetoverallTermPercentage(academic_year);
-            return Ok(JsonConvert.SerializeObject(result));
-
+            try
+            {
+                var result = service.GetoverallTermPercentage(academic_year);
+                if (result == null)
+                {
+                    return NoContent();
+                }
+                else
+                {
+                    return Ok(JsonConvert.SerializeObject(result));
+                }
+            }
+            catch(Exception ex) 
+            { 
+            return NotFound(ex.Message);
+            }
         }
 
         [HttpGet("Get-subject-wise-Term-Percentage")]
-        public IActionResult GetSubjectWiseTermPercentage(int academicYear,string subject)
+        public IActionResult GetSubjectWiseTermPercentage(int academicYear, string subject)
         {
-            var result = service.GetSubjectWiseTotal(academicYear,subject);
-            return Ok(result);
-        }
+            try
+            {
+                var result = service.GetSubjectWiseTotal(academicYear, subject);
+                if (result == null)
+                {
+                    return NoContent();
+                }
+                else
+                {
+                    return Ok(result);
+                }
+            }catch(Exception ex)
+            {
+                return NotFound(ex.Message);
+            }
+            }
 
 
         [HttpGet("Get-overall-subject-wise-Term-Percentage")]
         public IActionResult GetStudentSubjectWiseoverallPercentage(int academicYear, string subject)
         {
-            var result = service.GetStudentSubjectWiseTotal(academicYear, subject);
-            return Ok(JsonConvert.SerializeObject(result));
+            try
+            {
+                var result = service.GetStudentSubjectWiseTotal(academicYear, subject);
+                if (result == null)
+                {
+                    return NoContent();
+                } else
+                {
+                    return Ok(JsonConvert.SerializeObject(result));
+                }
+            }catch(Exception ex)
+            {
+                return NotFound(ex.Message) ;   
+            }
         }
     }
 }

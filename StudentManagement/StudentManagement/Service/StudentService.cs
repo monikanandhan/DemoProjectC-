@@ -11,11 +11,12 @@ namespace StudentManagement.Service
             Context = _context; 
         } 
 
-        public Student AddStudentDetails(StudentVM studentVM)
+        public int AddStudentDetails(StudentVM studentVM)
         {
             var NewStudent = new Student()
             {
-                Id = studentVM.Id,
+                
+               
                 Name = studentVM.Name,
                 standard = studentVM.standard,
                 Academic_Year = studentVM.Academic_Year,
@@ -23,7 +24,7 @@ namespace StudentManagement.Service
             };
             Context.Students.Add(NewStudent);
             Context.SaveChanges();
-            return NewStudent;
+            return NewStudent.Id;
         }
 
         public List<Student> GetStudents() => Context.Students.ToList();   
